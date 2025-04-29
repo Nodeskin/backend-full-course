@@ -1,0 +1,21 @@
+-HTTP method is the same as ACTION and VERB
+
+app.get("/", (req, res) => {
+    // This is endpoint Number 1 and its at / routes
+    console.log("YAY i hit an endpoint", req.method)
+    res.sendStatus(201)
+});
+
+app.get("/dashboard", (req, res)=>{
+console.log("Ohhhh! i hit the /dashboard endpoint", req.method)
+res.send("HI there")
+})
+
+-A website is just HTML code.
+
+Website endpoint -> specifically sends back HTML and typically comes when a user enters a URL in  browser
+
+API Endpoint -> This is usually happens when you input yor username and password and hit submit.
+
+
+

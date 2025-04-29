@@ -1,0 +1,25 @@
+### TEST GET / WEBSITE
+
+GET http://localhost:2040
+
+
+### TEST GET / DASHBOARD WEBSITE
+GET http://localhost:2040/dashboard
+
+
+
+### TEST GET / DATA ENDPOINT
+GET http://localhost:2040/api/data
+
+### DATA ENDPOINT FOR ADDING NEW DATA
+POST http://localhost:2040/api/data
+Content-Type: application/json
+
+    {
+    "name": "John Doe"
+    }
+
+
+### DELETE DATA ENDPOINT
+DELETE http://localhost:2040/api/data
+
